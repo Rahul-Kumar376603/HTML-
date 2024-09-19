@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Code</title>
+    </head>
+    <body bgcolor="skyblue">
+        <center>
+            <h1><font color="Red"><b>Registration Form</b></font></h1>
+            <hr>
+        </center>
+        <ul>
+            <li>It's mandatory to fill in the details as per your documents</li><br>
+            <li>It's necessary to fill in all the details</li>
+        </ul>
+        <hr>
+        <img src="C:/Users/Rahul kumar/OneDrive/Pictures/IMG_3738.HEIC" alt="my photo" height="120"><br>
+        <p>PHOTO</p>
+        <form>
+            <label for="username">USERNAME</label>  
+            <input type="text" name="user" id="username" placeholder="username" required min="3" max="10"><br><br>
+            
+            <label for="password">PASSWORD</label>  
+            <input type="password" name="pass" id="password" placeholder="password" required min="3" max="10" ><br><br>
+            
+            <p>What is your age?</p>
+            <label for="number">Age</label>
+            <input type="number" id="number" name="Num" step="1" min="15" max="45" required><br><br>
+            
+            <p>What is your gender?</p>
+            <input type="radio" name="Gender" id="male" value="Male" required> 
+            <label for="male">Male</label><br>
+            
+            <input type="radio" name="Gender" id="female" value="Female"> 
+            <label for="female">Female</label><br>
+            
+            <input type="radio" name="Gender" id="others" value="Others"> 
+            <label for="others">Others</label><br><br>
+            
+            <label for="city">Select City</label>
+            <select id="city" name="city" required>
+                <option value="Faridabad">Faridabad</option>
+                <option value="Gurugram">Gurugram</option>
+                <option value="Noida">Noida</option>
+                <option value="Delhi">Delhi</option>
+            </select><br><br>
+            
+            <label for="country">Select Country</label>
+            <input name="country" list="capital" id="country" required>
+            <datalist id="capital">
+                <option value="India"></option>
+                <option value="Iran"></option>
+                <option value="France"></option>
+                <option value="Japan"></option>
+            </datalist><br><br>
+
+            <label for="extra">Any suggestion</label>
+            <textarea id="extra" name="extra" rows="3" cols="40">Please share some feedback</textarea><br><hr>
+            <button type="submit">Submit</button>
+            <hr>
+        </form>
+    </body>
+</html>
